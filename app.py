@@ -60,8 +60,8 @@ def metrics():
                     if value is not None:
                         # If the value is one of the defined binary strings,
                         # then change from text to binary values
-                        true_values = ["on", "dry", "active"]
-                        false_values = ["off", "wet", "inactive"]
+                        true_values = ["on", "dry", "active", "present"]
+                        false_values = ["off", "wet", "inactive", "not present"]
 
                         if value in true_values:
                             value = 1
